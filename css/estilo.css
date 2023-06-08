@@ -31,7 +31,7 @@ margin: 2% 20%;
     'area01 area01'
     'area02  area03';
     width: 60%;
-    gap: 10px;
+    gap: 4px;
 background-color: rgb(249, 249, 249);
 
 }
@@ -41,7 +41,7 @@ background-color: rgb(249, 249, 249);
 justify-content: space-between;
     flex-direction: column;
 gap: 2px;
-
+margin:2px;
   
 }
 .destacado h3{
@@ -433,3 +433,66 @@ color: rgb(15, 15, 15);
      
 
       }
+
+
+
+      @media only screen and (max-width:480px){
+
+.navbar-brand{
+    font-size:20px;
+}
+.destacado{
+    text-align: center;
+    margin:2px;
+    padding: 2px;
+    width: 100%;
+  
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    'area01'
+    'area02'
+    'area03';
+ 
+}
+.destacado h3{
+    font-size: 18px;
+}
+.destacado p{
+font-size: 14px;
+}
+   .destacado h2{
+    font-size: 30px;
+   }
+
+
+      }
+      @media only screen and (max-width:768px){
+
+.destacado{
+    width: 90%;
+    margin: 2%;
+    padding: 1%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 'area01'
+    'area02'
+    'area03';
+    
+}
+
+}
+
+@media only screen and (max-width:1024px){
+
+    .destacado{
+        width: 90%;
+        margin: 3%;
+        padding: 1%;
+        gap: 1px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 'area01 area01'
+        'area02 area03'
+        ;
+        
+    }
+    
+    }
