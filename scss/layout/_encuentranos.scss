@@ -1,0 +1,21 @@
+
+.donde{
+
+@extend .d-flex;    
+
+    width: 80%;
+    margin: 2% ;
+
+       img{
+
+        object-fit: cover;
+        width: 400px;
+        height: 400px;
+        
+        }
+       iframe{
+        width: 400px;
+        height: 400px;
+    }
+    }
+

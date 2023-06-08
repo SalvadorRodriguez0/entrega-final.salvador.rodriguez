@@ -1,0 +1,32 @@
+footer{
+    margin-top: 200px;
+position: absolute;
+width: 100%;
+
+
+
+}
+.redes {
+background-color:white;
+height: 20%;
+display: flex;
+align-items:flex-end;
+justify-content: right;
+gap:20px;
+
+img{
+ 
+    width: 50px;
+    height: 50px;
+object-fit: cover;
+border-radius: 80%;
+
+border-color: white;
+border: 20px  ;
+transition: 0.3s;
+&:hover{
+width:52px;
+height:55px;
+}
+}
+}

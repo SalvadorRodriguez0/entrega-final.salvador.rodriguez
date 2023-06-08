@@ -1,0 +1,12 @@
+.d-flex{display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+} 
+
+@mixin imagenes ($width,$height,$object){
+
+
+    width: $width;
+    height: $height;
+    object-fit: $object;
+}

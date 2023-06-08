@@ -1,0 +1,131 @@
+
+.destacado{
+    margin: 2% 20%;
+    
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        'area01 area01'
+        'area02  area03';
+        width: 60%;
+        gap: 4px;
+    background-color: rgb(249, 249, 249);
+   h2{
+        font-size: 40px;
+    }
+    h3{
+        text-align: left;
+        font-weight: bold;
+         font-size: 20px;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+    &_hijo{
+        
+        display: flex;
+    justify-content: space-between;
+        flex-direction: column;
+
+   
+
+    &:nth-child(even){
+        background-color: rgb(65, 65, 65);
+        color:white;
+        }
+
+    &:hover{
+        box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.156);
+    }
+    img{
+    @include imagenes(100%,auto,cover)
+        
+        }
+
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:16px;
+            
+            }
+    }
+    .zona{
+     
+        color:rgb(240, 3, 3);
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    }
+    .v2 img{
+        height: 250px;
+    }
+    .v3 img{
+        height: 250px;
+    }
+    .v1{
+    
+        grid-area: area01;
+       
+    }
+    .v2{
+        grid-area: area02;
+        
+    }
+    .v3{
+        grid-area: area03;
+       
+    }
+    
+ 
+    
+    @media only screen and (max-width:480px){
+
+      
+        .destacado{
+            text-align: center;
+
+         display: inline-block;
+            width: 90%;
+            padding: 2px;
+       
+         h3{
+            font-size: 15px;
+        }
+         p{
+        font-size: 14px;
+        }
+          h2{
+            font-size: 20px;
+           }
+        
+        }
+              }
+              @media only screen and (max-width:768px){
+        
+        .destacado{
+            width: 90%;
+            margin: 2%;
+            padding: 1%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-areas: 'area01'
+            'area02'
+            'area03';
+            
+        }
+        
+        }
+        
+        @media only screen and (max-width:1024px){
+        
+            .destacado{
+                width: 90%;
+                margin: 3%;
+                padding: 1%;
+                gap: 1px;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-areas: 'area01 area01'
+                'area02 area03'
+                ;
+                
+            }
+            
+            }

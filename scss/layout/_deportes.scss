@@ -1,0 +1,62 @@
+
+.deportes{
+    padding: 2%;
+        display: grid;
+    grid-template-columns: repeat(6,fr);
+    grid-template-rows: repeat(3,fr);
+    grid-template-areas: 
+    'are1 are1 are1 are1 are1 are1'
+    'are2 are2 are3 are3 are4 are4'
+    'are5 are5 are5 are6 are6 are6'
+    ;
+    margin: 4%;
+    gap:10px;
+    width: 70%;
+    justify-content: center;
+
+    .deporte__hijo{
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+        
+        gap:20px;
+        img{
+            object-fit: cover;
+        }
+    
+        h3{
+            text-align: center;
+        }
+        &:nth-child(even){
+              background-color: rgb(212, 106, 106)   ;
+              color:white;
+              }
+    }
+
+    }
+    .a1{
+        grid-area: are1;
+    
+    }
+    .a2{
+    
+        grid-area: are2;
+    }
+    .a3{
+    
+        grid-area: are3;
+    }
+    .a4{
+    
+        grid-area: are4;
+    }
+    .a5{
+    
+       grid-area: are5; 
+    }
+    .a6{
+     
+    grid-area: are6;
+        
+    }
+    

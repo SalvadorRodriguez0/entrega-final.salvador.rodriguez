@@ -1,0 +1,30 @@
+.navbar-brand{
+  color:white;
+  font-size: 30px;
+  font-style: solid;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.navbar-brand:hover{
+ 
+  color: white;
+
+}
+.container-fluid{
+  background-color: rgb(145, 31, 31);
+  
+}
+.nav-item{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+transition: 0.3s;
+
+&:hover{
+
+  font-size:18px;
+  font-weight: bold;
+
+}
+
+}
+
