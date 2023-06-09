@@ -1,68 +1,3 @@
-
-/*.grilla{
-    display:grid;
-        gap:10px;   
-      grid-template-columns: repeat(8,1fr);
-        grid-template-rows: repeat( 1, 1fr);
-        grid-template-areas: 
-        'area1'
-        'area2'
-        'area3'
-        'area4'
-        'area5'
-        'area6'
-        'area7'
-        'area8'
-        ;
-        padding: 10px;
-        align-items: center;
-        justify-items: center;
-        place-items: center;
-        margin:10%;
-        h3{
-            font-size: 20px;
-        }
-
-        &__hijo {
-            display:flow-root;
-         margin: 10px;
-        text-align: center;
-            width: 800px;
-          
-        
-        border-bottom: 2px 2px solid grey;
-         
-         gap:16px;
-        position: relative; 
-            
-&__fecha{
-    position:absolute;
-    right: 0;
-    bottom: 0;
-    margin: 5px;
-}
-        img{
-            width: 400px;
-            height: 400px;
-            object-fit: cover;
-        }
-        p {
-    
-            font-size: 15px;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-        
-        }
-        &:nth-child(even){
-            flex-direction:row-reverse;
-            background-color: rgb(98, 98, 98)   ;
-            color:white;
-            }
-        }
-    }
-    
-       
-    } */
-
 .grilla{
     display: grid;
     width: 80%;
@@ -89,9 +24,7 @@
         text-align: center;
        
             img{
-                width:100%;
-                height: 400px;
-                object-fit: cover;
+                @include imagenes(100%,400px,cover)
             }
             .grilla_hijo__fecha {
                 text-align: right;
