@@ -22,6 +22,7 @@
         gap:20px;
         img{
             object-fit: cover;
+            width: 100%;
         }
     
         h3{
@@ -59,4 +60,58 @@
     grid-area: are6;
         
     }
+    @media only screen and (max-width:1024px){
+.deportes{
+
+width: 90%;
+    grid-template-columns: repeat(6,fr);
+    grid-template-rows: repeat(3,fr);
+    grid-template-areas: 
+    'are1 are1 are1 are1 are1 are1'
+    'are2 are2 are3 are3 are4 are4'
+    'are5 are5 are5 are6 are6 are6'
+    ;
+
+}
+
+    }
+    @media only screen and (max-width:768px){
+        .deportes{  
+width: 100%;
+            grid-template-columns: repeat(2,fr);
+            grid-template-rows: repeat(4,fr);
+            grid-template-areas: 
+            'are1 are1'
+            'are2 are3' 
+            ' are4 are5'
+            'are6 are6' ;
+          
+            }
+   
+
+    }
+    @media only screen and (max-width:480px){
+.deportes{
+
+
+width: 100%;
+margin: 0;
+padding: 0;
+        grid-template-columns: repeat(1,fr);
+        grid-template-rows: repeat(6,fr);
+        grid-template-areas: 
+        'are1'
+         'are2'
+          'are3' 
+         ' are4'
+           'are5'
+            'are6';
+     
+    
+    }  
+
+    }
+
+
+
     

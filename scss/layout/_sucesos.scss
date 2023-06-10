@@ -6,9 +6,6 @@
     padding: 2%;
     margin:  1% 5%;
     gap:10px;
-
-    
-
    grid-template-columns: repeat(3,1fr);
    grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
@@ -69,3 +66,84 @@
     grid-area: area6;
     
 }
+@media only screen and (max-width:1024px){
+        
+    .grilla{
+        width: 90%;
+        margin: 3%;
+        padding: 1%;
+        gap: 15px;
+     
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(3,1fr);
+grid-template-areas: 
+'area1 area2 '
+'area3 area4 '
+'area5 area6'
+;
+        
+    }
+    
+    }
+    @media only screen and (max-width:768px){
+        .grilla{
+            width: 100%;
+            margin: 0;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+             grid-template-areas: 
+             'area1'
+             'area2'
+             ' area3'
+             'area4'
+             ' area5'
+             ' area6'
+             ;
+             &__hijo{
+                width: 100%;
+                gap: 15px;
+                img{
+        
+                    width: 100%;
+                    height: auto;
+                }
+                p{
+                    font-size: 18px;
+                }
+             }
+        }
+    }
+            
+@media only screen and (max-width:480px){
+.grilla{
+    width: 100%;
+    margin: 0;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+     grid-template-areas: 
+     'area1'
+     'area2'
+     ' area3'
+     'area4'
+     ' area5'
+     ' area6'
+     ;
+     &__hijo{
+        width: 100%;
+        gap: 5px;
+        img{
+
+            width: 100%;
+            height: auto;
+        }
+        p{
+            font-size: 14px;
+        }
+     }
+}
+
+
+
+
+}
+

@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@ hr {
   color: white;
   font-size: 30px;
   font-style: solid;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar-brand:hover {
@@ -42,7 +42,7 @@ hr {
 }
 
 .nav-item {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   transition: 0.3s;
   padding: 2px;
@@ -149,6 +149,26 @@ footer {
   grid-area: area03;
 }
 
+@media only screen and (max-width: 1024px) {
+  .destacado {
+    width: 90%;
+    margin: 3%;
+    padding: 1%;
+    gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "area01 area01" "area02 area03";
+  }
+}
+@media only screen and (max-width: 768px) {
+  .destacado {
+    width: 90%;
+    margin: 2%;
+    padding: 0;
+    display: inline-block;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "area01" "area02" "area03";
+  }
+}
 @media only screen and (max-width: 480px) {
   .destacado {
     text-align: center;
@@ -164,25 +184,6 @@ footer {
   }
   .destacado h2 {
     font-size: 20px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .destacado {
-    width: 90%;
-    margin: 2%;
-    padding: 1%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "area01" "area02" "area03";
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .destacado {
-    width: 90%;
-    margin: 3%;
-    padding: 1%;
-    gap: 1px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "area01 area01" "area02 area03";
   }
 }
 .contactos {
@@ -201,15 +202,20 @@ footer {
 }
 .contactos .btn {
   font-size: 20px;
-  background-color: rgb(169, 27, 27);
+  background-color: rgb(145, 31, 31);
   border: none;
   transition: 0.3s;
 }
 .contactos .btn:hover {
-  background-color: #7d1414;
+  background-color: #671616;
   font-size: 25px;
 }
 
+@media only screen and (max-width: 480px) {
+  .contactos {
+    margin: 10% 25%;
+  }
+}
 .deportes {
   padding: 2%;
   display: grid;
@@ -229,6 +235,7 @@ footer {
 }
 .deportes .deporte__hijo img {
   object-fit: cover;
+  width: 100%;
 }
 .deportes .deporte__hijo h3 {
   text-align: center;
@@ -262,6 +269,32 @@ footer {
   grid-area: are6;
 }
 
+@media only screen and (max-width: 1024px) {
+  .deportes {
+    width: 90%;
+    grid-template-columns: repeat(6, fr);
+    grid-template-rows: repeat(3, fr);
+    grid-template-areas: "are1 are1 are1 are1 are1 are1" "are2 are2 are3 are3 are4 are4" "are5 are5 are5 are6 are6 are6";
+  }
+}
+@media only screen and (max-width: 768px) {
+  .deportes {
+    width: 100%;
+    grid-template-columns: repeat(2, fr);
+    grid-template-rows: repeat(4, fr);
+    grid-template-areas: "are1 are1" "are2 are3" " are4 are5" "are6 are6";
+  }
+}
+@media only screen and (max-width: 480px) {
+  .deportes {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(1, fr);
+    grid-template-rows: repeat(6, fr);
+    grid-template-areas: "are1" "are2" "are3" " are4" "are5" "are6";
+  }
+}
 .donde {
   width: 80%;
   margin: 0 2%;
@@ -269,16 +302,66 @@ footer {
 .dondeh2 {
   margin: 3% 0;
 }
-.donde img {
+.dondedonde__hijo {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+.dondedonde__hijo img {
   object-fit: cover;
   width: 400px;
   height: 400px;
 }
-.donde iframe {
+.dondedonde__hijo iframe {
   width: 400px;
   height: 400px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .donde {
+    width: 80%;
+  }
+  img {
+    width: 60%;
+  }
+  p {
+    font-size: 19px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .donde {
+    width: 90%;
+  }
+  img {
+    width: 50%;
+  }
+  p {
+    font-size: 16px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .donde {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  p {
+    font-size: 14px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
 .grilla {
   display: grid;
   width: 80%;
@@ -334,6 +417,58 @@ footer {
 
 .g6 {
   grid-area: area6;
+}
+
+@media only screen and (max-width: 1024px) {
+  .grilla {
+    width: 90%;
+    margin: 3%;
+    padding: 1%;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "area1 area2 " "area3 area4 " "area5 area6";
+  }
+}
+@media only screen and (max-width: 768px) {
+  .grilla {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "area1" "area2" " area3" "area4" " area5" " area6";
+  }
+  .grilla__hijo {
+    width: 100%;
+    gap: 15px;
+  }
+  .grilla__hijo img {
+    width: 100%;
+    height: auto;
+  }
+  .grilla__hijo p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .grilla {
+    width: 100%;
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "area1" "area2" " area3" "area4" " area5" " area6";
+  }
+  .grilla__hijo {
+    width: 100%;
+    gap: 5px;
+  }
+  .grilla__hijo img {
+    width: 100%;
+    height: auto;
+  }
+  .grilla__hijo p {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

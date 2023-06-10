@@ -7,6 +7,11 @@
 
      margin:3% 0;
     }
+    &donde__hijo{
+        display: flex;
+        flex-direction: column;
+        margin: 1%;
+
        img{
 
         object-fit: cover;
@@ -18,6 +23,65 @@
         width: 400px;
         height: 400px;
     }
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .donde{
+        width: 80%;
 
     }
+    img{
+    
+        width:60%;
+    }
+    p{
+        font-size: 19px     ;
+    }
+    iframe{
+        width: 100%;
+        height: auto ;
+    }
 
+
+}
+
+@media only screen and (max-width:768px){
+    .donde{
+        width: 90%;
+
+    }
+    img{
+    
+        width:50%;
+    }
+    p{
+        font-size: 16px   ;
+    }
+    iframe{
+        width: 100%;
+        height: auto ;
+    }
+
+
+}
+
+    @media only screen and (max-width:480px){
+        .donde{
+            width: 100%;
+
+        }
+        img{
+        
+            width:100%;
+        }
+        p{
+            font-size: 14px     ;
+        }
+        iframe{
+            width: 100%;
+            height: auto ;
+        }
+
+    
+    }

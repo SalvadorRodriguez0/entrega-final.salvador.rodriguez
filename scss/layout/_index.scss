@@ -11,8 +11,10 @@
         width: 60%;
         gap: 4px;
     background-color: rgb(249, 249, 249);
+ 
     h1{
         display:none;
+
     }
    h2{
         font-size: 40px;
@@ -78,7 +80,38 @@
        
     }
     
- 
+    @media only screen and (max-width:1024px){
+        
+        .destacado{
+            width: 90%;
+            margin: 3%;
+            padding: 1%;
+            gap: 1px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: 'area01 area01'
+            'area02 area03'
+            ;
+            
+        }
+        
+        }
+          
+        @media only screen and (max-width:768px){
+  
+  .destacado{
+      width: 90%;
+      margin: 2%;
+      padding: 0;
+   
+      display: inline-block;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-areas: 'area01'
+      'area02'
+      'area03';
+      
+  }
+  
+  }
     
     @media only screen and (max-width:480px){
 
@@ -101,34 +134,6 @@
            }
         
         }
-              }
-              @media only screen and (max-width:768px){
+   
         
-        .destacado{
-            width: 90%;
-            margin: 2%;
-            padding: 1%;
-            grid-template-columns: repeat(1,1fr);
-            grid-template-areas: 'area01'
-            'area02'
-            'area03';
-            
-        }
-        
-        }
-        
-        @media only screen and (max-width:1024px){
-        
-            .destacado{
-                width: 90%;
-                margin: 3%;
-                padding: 1%;
-                gap: 1px;
-                grid-template-columns: repeat(2,1fr);
-                grid-template-areas: 'area01 area01'
-                'area02 area03'
-                ;
-                
-            }
-            
-            }
+    }
