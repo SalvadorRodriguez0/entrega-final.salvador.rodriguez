@@ -2,28 +2,31 @@
 .deportes{
     padding: 2%;
         display: grid;
-    grid-template-columns: repeat(6,fr);
-    grid-template-rows: repeat(3,fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);
     grid-template-areas: 
-    'are1 are1 are1 are1 are1 are1'
-    'are2 are2 are3 are3 are4 are4'
-    'are5 are5 are5 are6 are6 are6'
+    'are1 are1 are1'
+    'are2 are3 are4'
+    'are5 are6 are6'
     ;
+
     margin: 4%;
     gap:10px;
     width: 70%;
     justify-content: center;
 
-    .deporte__hijo{
+        &_hijo{
         display: flex;
         flex-direction: column;
         margin: 1%;
-        
-        gap:20px;
         img{
-            object-fit: cover;
-            width: 100%;
+            @include imagenes(100%,200px,cover);
         }
+        gap:20px;
+        &:hover img,h2,h3,p{
+            cursor: pointer;
+        }
+      
     
         h3{
             text-align: center;
@@ -37,7 +40,10 @@
     }
     .a1{
         grid-area: are1;
-    
+    img{
+        height:auto;
+    }
+
     }
     .a2{
     
@@ -64,22 +70,27 @@
 .deportes{
 
 width: 90%;
-    grid-template-columns: repeat(6,fr);
-    grid-template-rows: repeat(3,fr);
-    grid-template-areas: 
-    'are1 are1 are1 are1 are1 are1'
-    'are2 are2 are3 are3 are4 are4'
-    'are5 are5 are5 are6 are6 are6'
-    ;
+grid-template-columns: repeat(2,1fr);
+grid-template-rows: repeat(4,auto);
+grid-template-areas: 
+'are1 are1'
+'are2 are3' 
+' are4 are5'
+'are6 none' ;
 
 }
-
     }
+
     @media only screen and (max-width:768px){
         .deportes{  
+           gap:0;
+           h3{
+            font-size: 20px;
+           }
+            margin: 0;
 width: 100%;
-            grid-template-columns: repeat(2,fr);
-            grid-template-rows: repeat(4,fr);
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(4,auto);
             grid-template-areas: 
             'are1 are1'
             'are2 are3' 
@@ -97,8 +108,8 @@ width: 100%;
 width: 100%;
 margin: 0;
 padding: 0;
-        grid-template-columns: repeat(1,fr);
-        grid-template-rows: repeat(6,fr);
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,auto);
         grid-template-areas: 
         'are1'
          'are2'
