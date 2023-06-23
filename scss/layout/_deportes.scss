@@ -2,6 +2,7 @@
 .deportes{
     padding: 2%;
         display: grid;
+        background-color: $color-fondo;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,auto);
     grid-template-areas: 

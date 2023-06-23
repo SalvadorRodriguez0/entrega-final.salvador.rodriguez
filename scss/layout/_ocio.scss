@@ -14,6 +14,7 @@ grid-template-areas:
 'area2'
 'area3';
 &_hijo{
+    background-color: $color-fondo;
     display: flex;
 h4{
     font-size: 20px;
