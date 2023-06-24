@@ -6,18 +6,17 @@
 }
 
 .h1b {
-  margin: 2%;
-  font-size: 19px;
+  margin: 3% 40%;
+  font-size: 15px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: inherit;
-  color: rgb(15, 15, 15);
+  font-weight: 600;
 }
 
 hr {
-  margin: 1%;
+  margin: 3% 33%;
   height: 4px;
-  width: 30%;
-  background: linear-gradient(45deg, rgb(66, 63, 63), rgb(145, 31, 31), rgb(255, 0, 0));
+  width: 40%;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
 }
 
 .d-flex {
@@ -97,9 +96,12 @@ hr {
   .footera {
     display: flex;
     flex-direction: column;
-    text-align: centerd;
+    text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .footera p:hover {
+    cursor: pointer;
   }
   .footera .a1 {
     gap: 0;
@@ -176,6 +178,7 @@ hr {
 
 .v1 {
   grid-area: area01;
+  width: 70%;
 }
 
 .v2 {
@@ -271,6 +274,10 @@ hr {
   text-align: center;
   font-weight: 500;
 }
+.titan_hijo h3:hover {
+  color: red;
+  cursor: pointer;
+}
 .titan_hijo p {
   font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -279,15 +286,24 @@ hr {
   height: 300px;
   object-fit: cover;
 }
+.titan_hijo img:hover {
+  color: red;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 1024px) {
   .destacado {
     width: 90%;
-    margin: 3%;
     padding: 1%;
     gap: 1px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "area01 area01" "area02 area03";
+  }
+  .destacado a {
+    font-size: 18px;
+  }
+  .destacado_hijo {
+    gap: 10px;
   }
   .noticias {
     gap: 10px;
@@ -298,6 +314,10 @@ hr {
   .noticias h3 {
     font-size: 15px;
   }
+  .titan {
+    width: 100%;
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 768px) {
   .destacado {
@@ -307,6 +327,9 @@ hr {
     display: inline-block;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "area01" "area02" "area03";
+  }
+  .destacado .v1 {
+    width: 100%;
   }
   .noticias {
     gap: 15px;
@@ -319,6 +342,11 @@ hr {
   }
   .noticias h3 {
     font-size: 15px;
+  }
+  .titan {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "areax1" "areax2" "areax3";
   }
 }
 @media only screen and (max-width: 480px) {
@@ -340,11 +368,11 @@ hr {
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "area1 " " area2" " area3" "area4" " area5";
   }
-  .noticias .a0 img {
-    height: 200px;
-  }
   .noticias h3 {
-    font-size: 15px;
+    font-size: 20px;
+  }
+  .titan h3 {
+    font-size: 20px;
   }
 }
 .contactos {
@@ -624,6 +652,12 @@ hr {
   }
 }
 @media only screen and (max-width: 480px) {
+  .ocio img {
+    height: 250px;
+  }
+  .ocio h5, .ocio h4 {
+    font-size: 16px;
+  }
   .recomendamos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);

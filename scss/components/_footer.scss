@@ -51,10 +51,13 @@ gap:0;
     .footera{
         display: flex;
         flex-direction: column;
-        text-align: centerd;
+        text-align: center;
    
         align-items: center;
         justify-content: center;
+        & p:hover{
+            cursor: pointer;
+        }
         .a1{
             gap:0;
             display: flex;

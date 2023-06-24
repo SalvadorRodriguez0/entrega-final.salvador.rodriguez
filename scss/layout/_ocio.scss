@@ -159,7 +159,20 @@ cursor: pointer;
 }
 
     @media only screen and (max-width:480px){
+        .ocio {
+            & img{
+            
+                height: 250px;    
+    }
+& h5,h4{
+    font-size: 16px;
+}
+
+        }
+        
+      
         .recomendamos{
+        
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(5,1fr);
             grid-template-areas: 

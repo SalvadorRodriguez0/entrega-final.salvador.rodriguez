@@ -90,6 +90,7 @@ gap:8px;
     }
     .v1{
         grid-area: area01;  
+        width: 70%;
     }
     .v2{
         grid-area: area02;
@@ -196,14 +197,23 @@ h3{
 font-family: $font-principal;
 text-align: center;
 font-weight: 500;
+&:hover{
+    color:red;
+    cursor: pointer;
+}
 }
 p{
 font-family: $font-secundaria;
+
 }
 
 
         & img{
             @include imagenes(100%,300px,cover);
+            &:hover{
+                color:red;
+                cursor: pointer;
+            }
         }
     }
     }
@@ -215,13 +225,21 @@ font-family: $font-secundaria;
         
         .destacado{
             width: 90%;
-            margin: 3%;
+         
             padding: 1%;
             gap: 1px;
             grid-template-columns: repeat(2,1fr);
             grid-template-areas: 'area01 area01'
             'area02 area03'
             ;
+            & a{
+                font-size: 18px;
+            }
+            &_hijo{
+                gap:10px;
+              
+           
+            }
             
         }
         .noticias{
@@ -235,6 +253,11 @@ font-family: $font-secundaria;
                 font-size: 15px;
             }
         }
+.titan{
+    width: 100%;
+    margin: 0;
+}
+
         }
           
         @media only screen and (max-width:768px){
@@ -249,7 +272,10 @@ font-family: $font-secundaria;
       grid-template-areas: 'area01'
       'area02'
       'area03';
-      
+      .v1{
+        width: 100%;
+      }
+
   }
   .noticias{
 .a0 img{
@@ -266,10 +292,18 @@ height: 300px;
         font-size: 15px;
     }
 }
+.titan{
+
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,auto);
+    grid-template-areas: 'areax1'
+    'areax2'
+    'areax3';
+}
   }
     
     @media only screen and (max-width:480px){
-
+      
       
         .destacado{
             text-align: center;
@@ -287,9 +321,7 @@ height: 300px;
         
         }
         .noticias{
-            .a0 img{
-                height: 200px;
-                }
+            
             gap:10px;
             grid-template-columns: repeat(1,1fr);
             grid-template-rows: repeat(5,1fr);
@@ -300,8 +332,14 @@ height: 300px;
             'area4'
             ' area5';
             h3{
-                font-size: 15px;
+                font-size: 20px;
+            }
+        }
+        .titan{
+            & h3{
+                font-size: 20px;
+            }
             }
         }
         
-    }
+    
