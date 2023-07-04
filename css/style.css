@@ -125,6 +125,12 @@ main {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 480px) {
+  .navbar-brand p {
+    font-size: 15px;
+    color: red;
+  }
+}
 .footera {
   display: grid;
   background-color: rgb(65, 65, 65);
@@ -542,6 +548,10 @@ main {
 .info .info_hijo_ubi {
   grid-area: xx2;
 }
+.info .info_hijo_ubi iframe {
+  height: 200px;
+  width: 100%;
+}
 .info .info_hijo_form {
   display: flex;
   grid-area: xx1;
@@ -599,6 +609,10 @@ main {
   }
   .info_hijo_ubi {
     margin-top: 10px;
+  }
+  .iframe {
+    height: 200px;
+    width: 100%;
   }
 }
 .deportes {
