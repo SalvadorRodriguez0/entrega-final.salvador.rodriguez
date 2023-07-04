@@ -1,8 +1,11 @@
 .navbar{
   padding: 0;
   position: fixed;
-  width: 100%;
-  top: 0;
+    top:0;
+    height:70px; 
+    width: 100%;
+    z-index: 3000;
+ 
 
   
   font-family: $font-principal;
@@ -80,13 +83,12 @@ box-shadow: 0px 1px 0px 0px gold;
   &:hover{
 color:gold;  }
 }
-
-
 .navbar-brand{
-
   color:white;
   font-size: 34px;
 font-family: $font-titulo;
+border-bottom-right-radius: 1.875em;
+border-top-right-radius: 1.875em;
 
 }
 .navbar-brand:hover{
