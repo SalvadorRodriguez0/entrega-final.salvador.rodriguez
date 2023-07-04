@@ -82,6 +82,7 @@ gap:8px;
     }
 
     }
+  
     .zona{
      
         color:rgb(240, 3, 3);
@@ -90,7 +91,8 @@ gap:8px;
     }
     .v1{
         grid-area: area01;  
-        width: 70%;
+       width: 80%;
+        
     }
     .v2{
         grid-area: area02;
@@ -311,7 +313,7 @@ height: 300px;
       }
         .destacado{
             text-align: center;
-
+            
          display: inline-block;
             width: 100%;
             margin:0;

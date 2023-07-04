@@ -16,6 +16,10 @@
          gap:10px;
          text-align: center;
          background-color: $color-fondo;
+         &:nth-child(even){
+            background-color: rgb(212, 106, 106)   ;
+            color:white;
+            }
          h3{
             font-size: 25px;
          }
